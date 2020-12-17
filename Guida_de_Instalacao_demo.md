@@ -1,125 +1,67 @@
 # Instruções para instalar as dependências do biblioteca
 
-## Passo 1 : Criar um novo ambiente no Anaconda 
+ - Os passos à seguir foram realizados utilizando o Python 3.7.9.
 
- - Nos testes foi usado a versão do python 3.7.9 mais deve funcionar para as versões mais recentes.
+## Passo 1: Criação de um Ambiente Virtual no Anaconda 
 
-### Terminal 
-
-```
-    $ conda create -n myenv python=3.7.9
-```
-### Anaconda Navigator
-
- - Abri o Anaconda Navigator
- - No canto esquerdo, aperte em Environment
- - Depois no canto inferior, aperte em Create
-
-## Passo 2 : Ativar o ambiente anaconda criado
-
-### Terminal
+No Terminal, crie o Ambiente Virtual:
 
 ```
-    $ conda activate myenv
+    $ conda create -n tclab_env python=3.7.9
 ```
 
- - Mostrando que o ambiente myenv está ativado
+Para ativá-lo:
 
 ```
-    (myenv)~/$
+    $ conda activate tclab_env
 ```
 
-## Passo 3 : Baixar o repositório
+> Se o ambiente for inicializado corretamente, seu terminal deverá aparecer algo como ```(myenv)~/$```.
 
-### Git clone
+Para desativá-lo:
 
- - Execute esse comando na pasta aonde irá colocar o repositório no seu armazenamento local
+```
+    $ conda deactivate
+```
+
+## Passo 2: *Download* do Repositório
+
+No terminal, digite o comando abaixo na pasta desejada:
 
 ```
     $ git clone https://github.com/evertoncolling/tclab_jupyter.git
 ```
 
-### Pasta zip
+## Passo 3: Instalação
 
- - Vai até o link : https://github.com/evertoncolling/tclab_jupyter
- - Aperte no botão verde Code, e irá aparecer um menu de opções
- - Vai na opção Download ZIP
- - Depois decompacte a pasta no local aonde deseja colocar
+No terminal:
 
-## Passo 4 : Instalar dependências 
+1. Ative o Ambiente Virtual criado e acesse o diretório ```tclab_jupyter/```.
+2. Digite o comando ```pip3 install -r requirements.txt```
 
-### Terminal
+## Passo 4: Hello World
 
- - Com o ambiente myenv ativado
- - Acesse a pasta do ```tclab_jupyter-master```
+No terminal:
+
+1. Com o Ambiente Virtual ativado e no diretório ```tclab_jupyter/```, abra o [Jupyter Notebook](https://jupyter.org) com o comando ```jupyter notebook```.
+2. Abra o arquivo ```demo.ipynb```.
+3. Execute a primeira célula, clicando em ```run```, para importar as bibliotecas necessárias.
+4. Execute a segunda célula para rodar a aplicação e pressione ```Start``` para inicá-la.
+5. Por fim, execute a terceira célula para ter acesso as configurações da aplicação.
+
+> NOTA: um erro é gerado caso o valor inserido seja igual ao atual.
+
+## Passo 5: Integração com Arduino
  
-```
-    (myenv)~/tclab_jupyter-master$
-```
- 
- - Depois coloque o comando para instalar as dependências sozinhas
+No diretório do projeto, execute:
 
 ```
-    (myenv)~/tclab_jupyter-master$ pip3 install -r requirements.txt
-```
-## Passo 5 : Executar codigo exemplo
-
- - Depois de ter finalizado os passos anteriores, agora vamos testar o exemplo ```demo.ipynb```
-
-### Jupyter Notebook
- 
- - Com o ambiente myenv ativado
- - Coloque no terminal 
-
-```
-    (myenv)~/tclab_jupyter-master$ jupyter notebook
+git clone https://github.com/APMonitor/arduino.git
 ```
 
- - Abre o arquivo ```demo.ipynb```
+Por fim, entre na pasta ```arduino/0_Test_Device/Python/tclab_v2``` e carregue o arquino ```.ino``` em um Arduino Uno via [Interface Nativa](https://www.arduino.cc).
 
- - Rode a primeira célula para importar as bibliotecas
-
- - Rode a segunda célula para ter acesso ao app, aperte o Start para dar inicio a simulação
-
- - Rode a terceira célula para ter acesso as configurações, lembre que irá aparecer um erro se aplicar um valor igual ao anterior
-
- 
-## Passo 6 : Executar codigos no arduino
-
- - Colocar os exemplos em prática com arduino  
- 
-###  Tclab exemplos no arduino
-
- - Para mais exemplos, será necessário baixar outro repositório
-
-```
-    (myenv)~/tclab_jupyter-master$ git clone https://github.com/APMonitor/arduino.git
-```
-
- - Entre em arduino-master
-
-```
-    (myenv)~/tclab_jupyter-master$ cd arduino-master
-```
-```
-    (myenv)~/tclab_jupyter-master/arduino-master$
-```
-
-### Baixar firmware para o arduino
-
- - Entrar em 0_Test_Device, depois em Python e por fim em tclab_v2 
-
-```
-    (myenv)~/tclab_jupyter-master/arduino-master$ cd 0_Test_Device/Python/tclab_v2
-```
-
- - Abrir o arquivo tclab_v2.ino no Arduino IDE e carregar o código no arduino uno
-
-### Testar exemplos
-
- - Até aqui, tudo está pronto para funcionar
- - Os exemplos estarão na pasta arduino-master
- - Os exemplos terão como referência a linguagem de programação na qual está querendo se usar
+Pronto, o laboratório está pronto para uso.
 
    
 
