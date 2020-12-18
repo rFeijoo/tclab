@@ -16,7 +16,7 @@ Para ativá-lo:
     $ conda activate tclab_env
 ```
 
-> Se o ambiente for inicializado corretamente, seu terminal deverá aparecer algo como ```(myenv)~/$```.
+> Se o ambiente for inicializado corretamente, seu terminal deverá aparecer algo como ```(myenv)``` atrás do caminho do diretorio do seu terminal.
 
 Para desativá-lo:
 
@@ -42,12 +42,16 @@ No terminal, digite o comando abaixo na pasta desejada:
  
 No diretório do projeto, entre na pasta firmware e abra o arquivo tclab.ino:
 
-Por fim, entre na pasta ```firmware/``` e carregue o arquino ```tclab.ino``` em um Arduino Uno via [Interface Nativa](https://www.arduino.cc).
+Por fim, entre na pasta ```firmware/``` e carregue o arquino ```tclab.ino``` em um Arduino Uno via [Arduino IDE](https://www.arduino.cc).
 
-Pronto, o laboratório está pronto para uso.
+Pronto, o laboratório está apto para uso.
 
-## Passo 5: Hello World
+## Passo 5: Utilização
 
 No terminal:
 
-1. Com o Ambiente Virtual ativado e no diretório ```arduino/```, abra o a pasta ```0_Test_Device/```, lá se encontra exemplos basicos para validar a comunicação do Arduino com o Python. 
+1. Com o Ambiente Virtual ativado e no diretório ```arduino/```, encontra diversos exemplos de utilização.
+
+2. Para começar, abra o a pasta ```0_Test_Device/```, lá se encontra exemplos basicos para validar a comunicação do Arduino com o Python. 
+
+
