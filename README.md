@@ -42,7 +42,7 @@ No terminal, digite o comando abaixo na pasta desejada:
  
 No diretório do projeto, entre na pasta firmware e abra o arquivo tclab.ino:
 
-Por fim, entre na pasta ```firmware/``` e carregue o arquino ```tclab.ino``` em um Arduino Uno via [Arduino IDE](https://www.arduino.cc).
+Por fim, entre na pasta ```tclab_arduino/``` e carregue o arquino ```tclab_arduino.ino``` em um Arduino Uno via [Arduino IDE](https://www.arduino.cc).
 
 Pronto, o laboratório está apto para uso.
 
