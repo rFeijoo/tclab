@@ -35,7 +35,7 @@ No terminal:
 No terminal, digite o comando abaixo na pasta desejada:
 
 ```
-    $ git clone https://github.com/evertoncolling/tclab_jupyter.git
+    $ git clone https://github.com/rFeijoo/tclab.git
 ```
 
 ## Passo 4: Integração com Arduino
