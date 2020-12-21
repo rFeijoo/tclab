@@ -41,7 +41,7 @@ No terminal, digite o comando abaixo na pasta de trabalho desejada:
 
 ## Passo 4: Integração com Arduino
  
-No diretório do projeto, entre na pasta ```tclab/arduino/```, abra o arquivo ```tclab.ino``` e o carregue em um *Arduino Uno* via [Arduino IDE](https://www.arduino.cc).
+No diretório do projeto, entre na pasta ```tclab/arduino/tclab/```, abra o arquivo ```tclab.ino``` e o carregue em um *Arduino Uno* via [Arduino IDE](https://www.arduino.cc).
 
 Pronto, o laboratório está apto para uso.
 
