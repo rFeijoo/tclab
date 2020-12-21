@@ -28,6 +28,11 @@ Para desativá-lo:
 No terminal:
 
 1. Digite o comando ```pip install tclab```
+2. Depois aperte ```y```
+3. Ao final da instalação do ```tclab```
+4. Caso queira testar os exemplos do *GEKKO*
+5. Digite o comando ```pip install gekko```
+6. epois aperte ```y```
 
 
 ## Passo 3: *Download* do Repositório
