@@ -1,6 +1,6 @@
-# Instruções para instalar as dependências do biblioteca
+# Laboratório TCLAB
 
- - Os passos à seguir foram realizados utilizando o Python 3.7.9.
+ - Os passos à seguir foram realizados utilizando Python 3.7.9.
 
 ## Passo 1: Criação de um Ambiente Virtual no Anaconda 
 
@@ -23,21 +23,17 @@ Para desativá-lo:
 ```
     $ conda deactivate
 ```
-## Passo 2: Instalação
+## Passo 2: Instalação das Bibliotecas
 
 No terminal:
 
-1. Digite o comando ```pip install tclab```
-2. Depois aperte ```y```
-3. Ao final da instalação do ```tclab```
-4. Caso queira testar os exemplos do *GEKKO*
-5. Digite o comando ```pip install gekko```
-6. epois aperte ```y```
+1. Digite o comando ```pip install tclab```;
+2. Caso queira testar os exemplos do *GEKKO*, digite o comando ```pip install gekko```;
 
 
 ## Passo 3: *Download* do Repositório
 
-No terminal, digite o comando abaixo na pasta desejada:
+No terminal, digite o comando abaixo na pasta de trabalho desejada:
 
 ```
     $ git clone https://github.com/rFeijoo/tclab.git
@@ -45,18 +41,16 @@ No terminal, digite o comando abaixo na pasta desejada:
 
 ## Passo 4: Integração com Arduino
  
-No diretório do projeto, entre na pasta firmware e abra o arquivo tclab.ino:
-
-Por fim, entre na pasta ```tclab_arduino/``` e carregue o arquino ```tclab_arduino.ino``` em um Arduino Uno via [Arduino IDE](https://www.arduino.cc).
+No diretório do projeto, entre na pasta ```tclab/arduino/```, abra o arquivo ```tclab.ino``` e o carregue em um *Arduino Uno* via [Arduino IDE](https://www.arduino.cc).
 
 Pronto, o laboratório está apto para uso.
 
 ## Passo 5: Utilização
 
-No terminal:
+1. Para começar, ative o Ambiente Virtual e deixe o Arduino programado com o código ```tclab.ino```. Lembre-se de não abrir o *Serial Monitor*, já que o laboratório se comunica via interface Serial. 
 
-1. Com o Ambiente Virtual ativado e no diretório ```arduino/```, encontra diversos exemplos de utilização.
+2. Abra o a pasta ```tclab/python/0_Test_Device/```, e execute algum dos códigos para validar o funcionamento da interface.
 
-2. Para começar, abra o a pasta ```0_Test_Device/```, lá se encontra exemplos basicos para validar a comunicação do Arduino com o Python. 
+3. Após validar o *hardware*, explore os outros códigos ```.py```.
 
 
