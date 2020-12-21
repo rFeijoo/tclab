@@ -1,6 +1,6 @@
 # Laboratório TCLAB
 
- - Os passos à seguir foram realizados utilizando Python 3.7.9.
+ - Os passos à seguir foram realizados utilizando Python 3.7.9, baseado no repositório https://github.com/APMonitor/arduino.
 
 ## Passo 1: Criação de um Ambiente Virtual no Anaconda 
 
