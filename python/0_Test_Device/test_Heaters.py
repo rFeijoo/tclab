@@ -48,6 +48,8 @@ plt.show()
 # Main Loop
 start_time = time.time()
 prev_time = start_time
+
+i = 0
 try:
     for i in range(1,loops):
         # Sleep time

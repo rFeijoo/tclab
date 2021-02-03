@@ -1,13 +1,13 @@
 # Laboratório TCLAB
 
- - Os passos à seguir foram realizados utilizando Python 3.7.9, baseado no repositório https://github.com/APMonitor/arduino.
+ - Os passos à seguir foram realizados utilizando Python 3.9.1, baseado no repositório https://github.com/APMonitor/arduino.
 
 ## Passo 1: Criação de um Ambiente Virtual no Anaconda 
 
 No Terminal, crie o Ambiente Virtual:
 
 ```
-    $ conda create -n tclab_env python=3.7.9
+    $ conda create -n tclab_env python=3.9.1
 ```
 
 Para ativá-lo:
@@ -28,7 +28,7 @@ Para desativá-lo:
 No terminal:
 
 1. Digite o comando ```pip install tclab```;
-2. Caso queira testar os exemplos do *GEKKO*, digite o comando ```pip install gekko```;
+2. Digite o comando ```conda install matplotlib numpy scipy```;
 
 
 ## Passo 3: *Download* do Repositório

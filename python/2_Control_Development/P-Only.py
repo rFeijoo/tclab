@@ -30,8 +30,8 @@ def pid(sp,pv,pv_last,ierr,dt):
     tauD = 1.0  # sec
     # Parameters in terms of PID coefficients
     KP = Kc
-    KI = Kc/tauI
-    KD = Kc*tauD
+    KI = 0
+    KD = 0
     # ubias for controller (initial heater)
     op0 = 0 
     # upper and lower bounds on heater level
@@ -274,3 +274,4 @@ except:
     save_txt(tm[0:i],Q1[0:i],Q2[0:i],T1[0:i],T2[0:i],Tsp1[0:i],Tsp2[0:i])
     plt.savefig('test_PID.png')
     raise
+    

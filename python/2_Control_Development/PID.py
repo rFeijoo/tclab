@@ -159,6 +159,8 @@ prev_time = start_time
 dt_error = 0.0
 # Integral error
 ierr = 0.0
+
+i = 0
 try:
     for i in range(1,loops):
         # Sleep time
